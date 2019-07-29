@@ -1,10 +1,10 @@
 
 from airflow.plugins_manager import AirflowPlugin
-from BQCustomPlugin.operators.custom_gcs_to_bq import GoogleCloudStorageToBigQueryOperator
+from BqOperatorFix.operators.custom_bq_operator import BigQueryOperator
 
 class BQCustomPlugin(AirflowPlugin):
     name = "BQCustomPlugin"
-    operators = [GoogleCloudStorageToBigQueryOperator]
+    operators = [BigQueryOperator]
     # Leave in for explicitness
     hooks = []
     executors = []
