@@ -1,10 +1,10 @@
-# BQCustomPlugin
-custom GCS to BQ operator with bug fix
+# BqOperatorFix
+custom BQ operator with bug fix
 https://stackoverflow.com/questions/55300785/google-cloud-composer-bigquery-operator-get-jobs-api-httperror-404
 
-Keep this BQCustomPlugin folder as it is in your plugins folder.
-jsut change import statement in your dag to this,
+* Copy BqOperatorFix folder as it is in your plugins folder.
+* Change import statement in your dag to this
 
- ```from BQCustomPlugin.operators.custom_gcs_to_bq import GoogleCloudStorageToBigQueryOperator```
+ ```from BqOperatorFix.operators.custom_bq_operator import BigQueryOperator```
  
  
